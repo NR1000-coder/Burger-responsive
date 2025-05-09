@@ -17,11 +17,6 @@ section {
 header {
   padding: 20px 0;
 }
-header .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 header .menu .imgbox {
   width: 40px;
 }
@@ -30,8 +25,9 @@ header .menu nav a {
   color: #8c8999;
   margin-right: 30px;
 }
-header .menu nav .home-color {
+header .menu nav a:hover {
   color: #74bebc;
+  cursor: pointer;
 }
 header .menu .buttons {
   display: none;
@@ -40,6 +36,10 @@ header .menu .buttons .btn {
   margin: 0 5px;
   font-size: 20px;
   background-color: #f2f2f4;
+}
+header .menu .buttons .btn:hover {
+  color: #74bebc;
+  cursor: pointer;
 }
 header .menu .buttons .shop {
   color: white;
@@ -66,7 +66,11 @@ header .menu .buttons .shop {
 }
 
 #beautiful {
-  background-color: #f4fafb;
+  background-image: url(Assets/10.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 90px 0;
 }
 #beautiful .box {
   margin: 0 80px 60px 0;
@@ -77,6 +81,7 @@ header .menu .buttons .shop {
 }
 #beautiful .box span {
   color: #37b7c3;
+  cursor: pointer;
 }
 #beautiful .box h5 {
   color: #676f8b;
@@ -92,6 +97,9 @@ header .menu .buttons .shop {
   color: white;
   margin-bottom: 20px;
 }
+#beautiful .box .btn h2 {
+  cursor: pointer;
+}
 #beautiful .box .imgbox {
   width: 120px;
 }
@@ -103,14 +111,64 @@ header .menu .buttons .shop {
   margin-left: 50px;
 }
 @media (max-width: 992px) {
+  #beautiful {
+    background-position: right top;
+    background-size: auto;
+  }
   #beautiful .box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin: 0 10px 100px;
+  }
+  #beautiful .box h1 {
+    padding: 0 50px;
+  }
+  #beautiful .box h5 {
+    font-size: 22px;
+  }
+  #beautiful .box .btn {
+    padding: 15px 45px;
+    font-size: 22px;
+  }
+  #beautiful .box .imgbox {
+    margin-top: 10px;
+  }
+  #beautiful .box h4 {
+    font-size: 22px;
   }
 }
+@media (max-width: 768px) {
+  #beautiful .box h1 {
+    font-size: 65px;
+  }
+  #beautiful .box h5 {
+    margin: 30px 0 60px;
+  }
+  #beautiful .box .btn {
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 430px) {
+  #beautiful {
+    padding: 50px 0;
+  }
+  #beautiful .box h1 {
+    padding: 0;
+    font-size: 60px;
+  }
+  #beautiful .box h5 {
+    margin: 40px 0 70px;
+  }
+  #beautiful .box .btn {
+    font-size: 25px;
+  }
+}
+
 #thehome {
   background-color: #f1f8f9;
+  padding: 90px 0;
 }
 #thehome .textbox {
   width: 370px;
@@ -138,6 +196,44 @@ header .menu .buttons .shop {
   width: 100%;
   margin-left: 20px;
 }
+@media (max-width: 992px) {
+  #thehome .col-md-6 {
+    width: 100%;
+  }
+  #thehome .textbox {
+    text-align: center;
+    width: 500px;
+  }
+  #thehome .textbox h1 {
+    font-size: 72px;
+  }
+  #thehome .textbox h5 {
+    font-size: 22px;
+  }
+  #thehome .textbox .btn {
+    padding: 18px 40px;
+  }
+  #thehome .imgbox {
+    margin: 0;
+    width: auto;
+  }
+  #thehome .imgbox img {
+    width: 100%;
+  }
+}
+@media (max-width: 430px) {
+  #thehome .textbox h1 {
+    font-size: 70px;
+  }
+  #thehome .textbox h5 {
+    font-size: 24px;
+  }
+  #thehome .textbox .btn {
+    font-size: 28px;
+    padding: 24px 72px;
+  }
+}
+
 #works h1 {
   font-weight: 700;
   font-size: 60px;
@@ -160,6 +256,46 @@ header .menu .buttons .shop {
   color: #676f8b;
   line-height: 1.3;
 }
+@media (max-width: 992px) {
+  #works .col-md-4 {
+    width: 100%;
+  }
+  #works .box {
+    margin-bottom: 100px;
+  }
+  #works .box .textbox {
+    padding: 40px 110px;
+  }
+  #works .box .textbox h2 {
+    font-size: 27px;
+  }
+  #works .box .textbox h4 {
+    font-size: 23px;
+  }
+  #works .box .imgbox {
+    display: flex;
+    justify-content: center;
+  }
+  #works .box .imgbox img {
+    width: 500px;
+  }
+}
+@media (max-width: 430px) {
+  #works .box {
+    margin: 70px 0;
+  }
+  #works .box .textbox {
+    padding: 15px 47px;
+  }
+  #works .box .textbox h2 {
+    font-size: 28px;
+    margin: 40px 0 15px;
+  }
+  #works .box .textbox h4 {
+    font-size: 23px;
+  }
+}
+
 #browse .textbox {
   text-align: center;
 }
