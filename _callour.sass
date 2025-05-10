@@ -19,23 +19,34 @@
     .imgbox
         width: auto
     @media ( max-width: 992px )
+        .col-md-6
+            width: 100%
+            display: flex
+            justify-content: center
         .textbox
-           
-
+            text-align: center
+            h1
+                padding: 0 120px
+            h5
+                font-size: 24px
+                padding: 0 80px
+            .btn
+                margin-bottom: 100px
          
     @media ( max-width: 768px )
         .textbox
             h1, h5
-              
+              padding: 0 50px
     @media ( max-width: 440px )
         .textbox
-            
             h1
-               
+               font-size: 58px
             h5
-               
+                font-size: 22px
+            h1, h5 
+                padding: 0 20px 
             .btn
-            
+                padding: 20px 70px
 
         .imgbox
          
